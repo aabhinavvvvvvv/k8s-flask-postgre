@@ -97,7 +97,7 @@ CREATE TABLE pods (
 Store pod names in the PostgreSQL database:
 You can also use postman for this
 ```bash
-curl -X POST http://localhost:5000/store-pods -H "Content-Type: application/json" -d '{"pod_names": ["flask-app", "postgres-db"]}'
+curl -X POST http://localhost:5000/store-pods -H "Content-Type: application/json" -d "{\"pod_names\": [\"flask-app\", \"postgres-db\"]}"
 ```
 
 **Expected Response:**

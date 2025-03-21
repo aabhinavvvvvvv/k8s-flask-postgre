@@ -85,6 +85,15 @@ curl http://localhost:5000/pods
 ```
 
 #### **Test the `/store-pods` Endpoint**
+Before doing this first create table:
+```bash
+kubectl exec -it postgres-db -n nrp -- psql -U admin -d nrp_db
+CREATE TABLE pods (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL
+);
+\dt
+```
 Store pod names in the PostgreSQL database:
 You can also use postman for this
 ```bash

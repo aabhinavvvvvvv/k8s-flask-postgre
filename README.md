@@ -22,3 +22,8 @@ Clone this repository to your local machine:
 ```bash
 git clone https://github.com/your-username/kubernetes-flask-postgres.git
 cd kubernetes-flask-postgres
+
+## *Applying kubernetes manifest files*
+### *Create Namespace*
+kubectl apply -f namespace.yaml
+
